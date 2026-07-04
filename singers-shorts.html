@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Singer Shorts — Forgemedia</title>
+<meta name="description" content="Sound-synced short-form edits for singers and vocalists by Forgemedia — performance and cover clips built to be discovered." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<style>
+  :root{--black:#000;--white:#fff;--muted:rgba(255,255,255,.56);--muted-dim:rgba(255,255,255,.34);--glass:rgba(255,255,255,.045);--glass-border:rgba(255,255,255,.1);--ease:cubic-bezier(.16,.84,.36,1);}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--black);color:var(--white);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;}
+  h1,h2,.display{font-family:'Space Grotesk',sans-serif;letter-spacing:-0.02em;font-weight:500;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 32px;}
+  header{padding:26px 0;border-bottom:1px solid var(--glass-border);}
+  nav{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;padding:0 32px;}
+  .logo{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;display:flex;align-items:center;gap:8px;}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--white);}
+  .back{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px;}
+  .back:hover{color:var(--white);}
+  .hero{padding:110px 0 70px;text-align:center;}
+  .eyebrow{font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:20px;}
+  .eyebrow::before,.eyebrow::after{content:'';width:24px;height:1px;background:var(--muted-dim);}
+  h1{font-size:clamp(34px,6vw,64px);line-height:1.05;}
+  .sub{max-width:560px;margin:22px auto 0;color:var(--muted);font-size:17px;line-height:1.6;}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:20px 0 90px;}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr);}}
+  @media(max-width:640px){.grid{grid-template-columns:repeat(2,1fr);}}
+  .clip{
+    aspect-ratio:9/16;border-radius:16px;border:1px solid var(--glass-border);
+    background:#000;overflow:hidden;position:relative;cursor:pointer;
+    transition:transform .4s var(--ease), border-color .4s;
+  }
+  .clip:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.3);}
+  .clip video{width:100%;height:100%;object-fit:cover;display:block;}
+  .clip .num{position:absolute;top:10px;left:12px;font-family:'Space Grotesk',sans-serif;font-size:11px;color:rgba(255,255,255,.7);background:rgba(0,0,0,.4);padding:3px 8px;border-radius:100px;pointer-events:none;z-index:2;}
+  .clip .mute-btn{position:absolute;top:10px;right:12px;width:26px;height:26px;border-radius:50%;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;font-size:12px;z-index:2;pointer-events:none;}
+  .btn{display:inline-flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:500;padding:15px 28px;border-radius:100px;background:var(--white);color:var(--black);margin-top:14px;}
+  .cta{text-align:center;padding:20px 0 100px;}
+  footer{border-top:1px solid var(--glass-border);padding:30px 0;text-align:center;color:var(--muted-dim);font-size:13px;}
+</style>
+</head>
+<body>
+  <header><nav><a href="index.html" class="logo"><span class="dot"></span>Forgemedia</a><a href="index.html#niches" class="back">← Back to all niches</a></nav></header>
+
+  <section class="hero wrap">
+    <div class="eyebrow">Singer edits</div>
+    <h1>Performance shorts built to be discovered.</h1>
+    <p class="sub">Cover and original-performance edits, sound-synced down to the beat, captioned for silent scrolling, and paced to earn the replay. Tap a clip for sound.</p>
+  </section>
+
+  <div class="grid wrap" id="clip-grid">
+    <div class="clip"><span class="num">01</span><span class="mute-btn">🔇</span><video autoplay muted loop playsinline webkit-playsinline preload="auto"><source src="assets/singers/singer-1.mp4" type="video/mp4"></video></div>
+    <div class="clip"><span class="num">02</span><span class="mute-btn">🔇</span><video autoplay muted loop playsinline webkit-playsinline preload="auto"><source src="assets/singers/singer-2.mp4" type="video/mp4"></video></div>
+    <div class="clip"><span class="num">03</span><span class="mute-btn">🔇</span><video autoplay muted loop playsinline webkit-playsinline preload="auto"><source src="assets/singers/singer-3.mp4" type="video/mp4"></video></div>
+    <div class="clip"><span class="num">04</span><span class="mute-btn">🔇</span><video autoplay muted loop playsinline webkit-playsinline preload="auto"><source src="assets/singers/singer-4.mp4" type="video/mp4"></video></div>
+    <div class="clip"><span class="num">05</span><span class="mute-btn">🔇</span><video autoplay muted loop playsinline webkit-playsinline preload="auto"><source src="assets/singers/singer-5.mp4" type="video/mp4"></video></div>
+    <div class="clip"><span class="num">06</span><span class="mute-btn">🔇</span><video autoplay muted loop playsinline webkit-playsinline preload="auto"><source src="assets/singers/singer-6.mp4" type="video/mp4"></video></div>
+    <div class="clip"><span class="num">07</span><span class="mute-btn">🔇</span><video autoplay muted loop playsinline webkit-playsinline preload="auto"><source src="assets/singers/singer-7.mp4" type="video/mp4"></video></div>
+    <div class="clip"><span class="num">08</span><span class="mute-btn">🔇</span><video autoplay muted loop playsinline webkit-playsinline preload="auto"><source src="assets/singers/singer-8.mp4" type="video/mp4"></video></div>
+  </div>
+
+  <div class="cta wrap">
+    <a href="https://calendly.com/forgemediabusiness/30min" target="_blank" rel="noopener" class="btn">Book a Strategy Call</a>
+  </div>
+
+  <footer>© 2026 Forgemedia. All rights reserved.</footer>
+
+  <script>
+    // All clips autoplay muted + looping on load. Clicking a clip toggles its
+    // sound on (muting every other clip first so only one plays audio at a time).
+    const clips = document.querySelectorAll('#clip-grid .clip');
+    clips.forEach(clip => {
+      const video = clip.querySelector('video');
+      const muteBtn = clip.querySelector('.mute-btn');
+
+      video.muted = true;
+      const tryPlay = () => video.play().catch(err => console.warn('Autoplay blocked, will resume on click:', err));
+      tryPlay();
+      video.addEventListener('loadedmetadata', tryPlay);
+      video.addEventListener('canplay', tryPlay);
+      video.addEventListener('error', () => {
+        console.error('Video failed to load:', video.currentSrc, video.error);
+        clip.style.background = 'linear-gradient(160deg, rgba(255,80,80,.15), rgba(255,255,255,.02))';
+        muteBtn.textContent = '⚠️';
+      });
+
+      clip.addEventListener('click', () => {
+        // If autoplay never started (blocked), a click always (re)starts playback first.
+        tryPlay();
+        const willUnmute = video.muted;
+        clips.forEach(c => {
+          const v = c.querySelector('video');
+          v.muted = true;
+          c.querySelector('.mute-btn').textContent = '🔇';
+        });
+        if (willUnmute) {
+          video.muted = false;
+          muteBtn.textContent = '🔊';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
